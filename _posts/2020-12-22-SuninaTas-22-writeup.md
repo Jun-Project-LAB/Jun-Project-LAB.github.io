@@ -12,12 +12,12 @@ Suninatas 22 Write-Up
 문제에 접속하면 아래와 같은 로그인 창과 필터링 되는 단어들을 확인할 수 있었습니다.
 필터링 내용들을 살펴보면 여태까지 봤던 문제 중 가장 많은 것을 볼 수 있었습니다.
 
-![Suninatas_22_Main](https://github.com/Jun-Project-LAB/Jun-Project-LAB.github.io/blob/main/_image/suninatas_22_main.png)
+![Suninatas_22_Main](https://github.com/Jun-Project-LAB/Jun-Project-LAB.github.io/blob/main/_image/suninatas_22_main.png?raw=true)
 
 문제의 풀이 조건에 대해 알 필요가 있으므로 먼저 개발자 도구를 통해 소스코드를 확인한 결과
  주석에 admin 계정으로 로그인하라는 조건이 있는 것을 찾을 수 있었습니다.
 
-![Suninatas_22_source](https://github.com/Jun-Project-LAB/Jun-Project-LAB.github.io/blob/main/_image/suninatas_22_source.png)
+![Suninatas_22_source](https://github.com/Jun-Project-LAB/Jun-Project-LAB.github.io/blob/main/_image/suninatas_22_source.png?raw=true)
 
 따라서 이 문제의 flag는 admin 계정의 password 혹은 로그인 할 경우 얻을 수 있는 것으로 짐작할 수 있었습니다.
 
