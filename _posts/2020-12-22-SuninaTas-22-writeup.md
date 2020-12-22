@@ -46,7 +46,7 @@ Null byte 삽입과 같은 방법으로 필터링을 우회할 수 있는 몇 �
 어찌되었든 해결 방법에 대해서는 알았으므로 자동화 코드의 경우 직접 작성해보았습니다. password의 길이를 알아내는 부분에서 최대 길이를 15로 잡은 것은
  html code 내에서 pw 입력란을 최대 15자로 제한하였기 때문입니다. 코드의 경우 아래와 같이 작성했습니다.
 
-><pre> python
+``` python
 #!/usr/bin/python
 
 import requests as req
@@ -74,7 +74,7 @@ for i in range(1, length+1):
             password += chr(j)
 
 print("admin's password is " + password)
-</pre>
+```
 
 session의 경우 자신의 환경에 맞게 변경하여 사용하면 됩니다. 코드를 작성할 때 제대로 값이 출력되지 않아서 잘못 작성한 줄 알았었는데, 
 문자를 비교하는 과정에서 이를 ' '로 묶어주지 않아서 숫자 값만 제대로 비교하고 문자 값의 경우 제대로 비교하지 못했던 오류가 있었습니다.
