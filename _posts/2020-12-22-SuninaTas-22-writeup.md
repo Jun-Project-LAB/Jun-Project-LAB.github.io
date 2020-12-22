@@ -7,7 +7,7 @@ tags: [blindSQLi, wargame, sunitas]
 Suninatas 22 Write-Up
 ---------------------
 
-# 문제 분석
+## 문제 분석
 
 문제에 접속하면 아래와 같은 로그인 창과 필터링 되는 단어들을 확인할 수 있었습니다.
 필터링 내용들을 살펴보면 여태까지 봤던 문제 중 가장 많은 것을 볼 수 있었습니다.
@@ -27,3 +27,9 @@ Suninatas 22 Write-Up
 
 사진을 보면 알 수 있듯이 OK guest라는 문구가 출력되는 것을 알 수 있었고 로그인에 성공할 경우 OK 라고 뜨는 것을 단서로 하여 blind SQL Injection을 
 시도하였습니다.
+
+***
+
+## Qeury Statement 작성
+
+SQL Injection에 주로 사용되는 keyword들이 대거 필터링 되었기에 쉽게 풀이에 접근하지 못하였습니다.
