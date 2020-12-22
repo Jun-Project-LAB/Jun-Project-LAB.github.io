@@ -24,5 +24,6 @@ Suninatas 22 Write-Up
 또한 테스트하기 위한 계정으로 guest/guest 계정이 있다고 하여 해당 계정을 이용하여 로그인 해보았습니다.
 
 ![Suninatas_22_guest](https://raw.githubusercontent.com/Jun-Project-LAB/Jun-Project-LAB.github.io/main/_image/sunintas_22_guest.png)
+
 사진을 보면 알 수 있듯이 OK guest라는 문구가 출력되는 것을 알 수 있었고 로그인에 성공할 경우 OK 라고 뜨는 것을 단서로 하여 blind SQL Injection을 
 시도하였습니다.
