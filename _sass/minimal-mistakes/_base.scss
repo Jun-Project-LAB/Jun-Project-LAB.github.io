@@ -157,8 +157,7 @@ pre {
 }
 
 pre {
-   /*add scrollbars to wide code blocks*/
-   overflow-wrap: break-word;
+   overflow-x: auto; /*add scrollbars to wide code blocks*/
 }
 
 p > code,
