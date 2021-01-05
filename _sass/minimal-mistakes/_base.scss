@@ -158,7 +158,7 @@ pre {
 
 pre {
    /*add scrollbars to wide code blocks*/
-   text-overflow: clip;
+   overflow-wrap: normal;
 }
 
 p > code,
