@@ -12,8 +12,6 @@ Dreamhack의 web hacking 강의 중 Client-side basic 강의를 보며 이해한
 
 ## **SOP**
 
-- SOP란 
-
 **Same Origin Policy**의 약자로 Javascript 또는 HTML tag를 사용하여 외부 리소스를 불러오는 기능을 이용, 기존에 정의되지 않은 악의적인 행위를 할 수 있는데 이를 방지하기 위한 정책으로 만들어졌습니다.
 
 이 정책은 서로 다른 Origin의 문서 또는 스크립트 간의 상호 작용을 제한함으로서 목적을 달성합니다. 여기서 Origin은 URL의 scheme, host, port를 통해 정의됩니다. 즉, 다른 origin이라고 함은 다른 URL을 의미합니다.
