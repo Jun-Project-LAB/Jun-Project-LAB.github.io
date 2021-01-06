@@ -157,11 +157,7 @@ pre {
 }
 
 pre {
-   /*overflow-x: auto; add scrollbars to wide code blocks*/
-
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    word-break: break-word;
+   overflow-x: auto; /*add scrollbars to wide code blocks*/
 }
 
 p > code,
