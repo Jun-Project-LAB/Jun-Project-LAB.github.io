@@ -22,4 +22,19 @@ SOP의 경우 대체로 다른 Origin으로 정보를 송신하는 것은 허용
 
 ## **CORS**
 
+**Cross Origin Resource Sharing**의 약자로 추가 HTTP Header를 사용하여 한 Origin에서 사용 중인 웹 애플리케이션이 다른 Origin의 선택 자원에 접근할 수 있는 권한을 부여하도록 브라우저에 알려주는 체제입니다.
 
+이는 SOP의 영향으로 인해 서로 다른 Origin과 Resource를 공유할 수 없는 것을 해결하기 위함으로 개발 또는 운영 목적으로 이를 필요로 하는 상황이 있을 수도 있기에 SOP가 적용된 상태에서도 리소스를 공유할 수 있는 방법이 CORS라고 합니다.
+
+CORS를 구성하는 방법의 경우 **postMessage**, **JSONP**, **CORS Header 사용** 세 가지가 있습니다.
+
+```
+- postMessage
+메시지를 주고받기 위한 이벤트 핸들러를 이용하여 리소스를 공유
+
+-JSONP
+스크립트 태그를 통해 다른 Origin의 Resource를 요청하고, 응답 데이터를 현재 Origin의 Callback 함수에서 다루는 방식으로 리소스를 공유
+
+-CORS Header 사용
+다른 Origin이 허용하는 설정 등을 HTTP Header를 통해 확인한 후 허용하는 요청을 보내 리소스를 공유하는 방식
+```
