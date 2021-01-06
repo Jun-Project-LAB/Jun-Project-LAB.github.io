@@ -29,12 +29,12 @@ SOP의 경우 대체로 다른 Origin으로 정보를 송신하는 것은 허용
 CORS를 구성하는 방법의 경우 **postMessage**, **JSONP**, **CORS Header 사용** 세 가지가 있습니다.
 
 ```
-``-`` postMessage
+- postMessage
 메시지를 주고받기 위한 이벤트 핸들러를 이용하여 리소스를 공유
 
-``-`` JSONP
+- JSONP
 스크립트 태그를 통해 다른 Origin의 Resource를 요청하고, 응답 데이터를 현재 Origin의 Callback 함수에서 다루는 방식으로 리소스를 공유
 
-``-`` CORS Header 사용
+- CORS Header 사용
 다른 Origin이 허용하는 설정 등을 HTTP Header를 통해 확인한 후 허용하는 요청을 보내 리소스를 공유하는 방식
 ```
