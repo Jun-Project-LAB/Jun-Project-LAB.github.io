@@ -92,5 +92,5 @@ CSRF의 경우 공격자가 사용자의 컴퓨터를 감염 시키거나 대상
 
 - Session Cookie 대신 Custom Header를 통한 사용자 인증
 - 공격자가 예측할 수 없는 파라미터 사용
--- CAPTCHA
--- CSRF Token
+ - CAPTCHA
+ - CSRF Token
