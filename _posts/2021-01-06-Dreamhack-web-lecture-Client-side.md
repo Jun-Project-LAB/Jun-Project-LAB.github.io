@@ -1,6 +1,6 @@
 ---
 title: "Dreamhack Web hacking Lecture(Client-Side)"
-tags: ["client-side basic"]
+tags: ["client-side basic", sop, cors, xss]
 categories: ["dreamhack", "web course"]
 ---
 
@@ -38,3 +38,26 @@ CORS를 구성하는 방법의 경우 **postMessage**, **JSONP**, **CORS Header 
 - CORS Header 사용
 다른 Origin이 허용하는 설정 등을 HTTP Header를 통해 확인한 후 허용하는 요청을 보내 리소스를 공유하는 방식
 ```
+
+* * *
+
+## **XSS**
+
+**Cross Site Scripting**의 약자로 서버의 응답에 공격자가 삽입한 악성 스크립트가 포함되어 사용자의 웹 브라우저에서 해당 스크립트가 실행되는 취약점을 의미합니다.
+
+주로 사용자의 세션 혹은 쿠키를 탈취하여 권한을 획득하거나 페이지를 변조하는 등의 공격을 수행할 수 있으며 성공적으로 수행하기 위해서는 아래 두 가지 조건을 만족해야 합니다.
+
+```
+- 입력 데이터에 대한 충분한 검증 과정이 없을 것
+ : 악성 스크립트 삽입을 위해서는 입력 데이터에 대한 검증의 허점이 필요합니다.
+
+- 서버의 응답 데이터가 웹 브라우저 내 페이지에 출력 시 충분한 검증 과정이 없을 것
+ : 이 또한 위와 마찬가지로 악성 스크립트가 웹 브라우저 렌더링에 성공하기 위해서는 검증의 허점이 필요합니다.
+```
+
+xss는 웹 서비스에 있어서 빈번하게 발생하는 취약점인 만큼 그에 대응하기 위한 다양한 기술 또한 있습니다. 아래는 그 기술들의 예시 중 하나입니다.
+
+`- Server-side Mitigations
+- HTTPOnly flag 사용
+- Content Security Policy 사용
+- X-XSS-Protection`
