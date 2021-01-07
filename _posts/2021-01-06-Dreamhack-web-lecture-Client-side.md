@@ -1,6 +1,6 @@
 ---
 title: "Dreamhack Web hacking Lecture(Client-Side)"
-tags: ["client-side basic", sop, cors, xss]
+tags: ["client-side basic", sop, cors, xss, csrf, "open redirect", "click jacking"]
 categories: ["dreamhack", "web course"]
 ---
 
@@ -95,4 +95,34 @@ CSRF의 경우 공격자가 사용자의 컴퓨터를 감염 시키거나 대상
 	- CAPTCHA
 	- CSRF Token
 
+* * *
 
+## **Open Redirect**
+
+**Open Redirect**의 경우 다른 페이지로 이동하기 위해 사용되는 Redirect를 공격자가 변조함으로써 이를 악용하는 취약점을 의미합니다.
+
+Open Redirect의 경우 이동되는 페이지를 피싱 사이트로 설정하여 추가적인 정보를 얻어내거나 다른 취약점을 연계하는데 사용할 수도 있습니다.
+
+* * *
+
+이러한 취약점을 예방하기 위해서는 다음과 같은 방법을 사용할 수 있습니다.
+
+- White List를 이용한 필터링
+ : Redirect에 사용할 링크를 White List로 구성하여 다른 주소에 대한 간섭을 방지할 수 있습니다.
+- 외부 링크로 이동할 경우 경고창 출력
+ : 사용자에게 직접적으로 경고를 보여줌과 동시에 혹시 모를 위험성에 대해 상기시켜 줄 수 있다.
+
+* * *
+
+## **Click Jacking**
+
+**Click Jacking**의 경우 웹 브라우저 화면에 출력되는 내용에 html, css, javascript와 같이 화면 출력에 영향을 주는 요소를 이용하여 눈속임을 통해 사용자의 클릭을 유도하는 공격 방법입니다.
+
+사용자의 클릭을 유도하는 페이지를 생성 후 이를 css 설정에서 투명도를 0으로 바꿔 보이지 않게 만들거나 하여 공격을 수행합니다.
+
+* * *
+
+Click Jacking을 예방하기 위해서는 두 가지 방법을 사용할 수 있습니다. 두 방법 모두 부모 페이지의 URL을 제한하여 예방한다는 공통점이 있습니다.
+
+- X-Frame-Options
+- frame-ancestors
