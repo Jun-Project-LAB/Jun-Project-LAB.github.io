@@ -57,7 +57,7 @@ CORS를 구성하는 방법의 경우 **postMessage**, **JSONP**, **CORS Header 
 
 xss는 웹 서비스에 있어서 빈번하게 발생하는 취약점인 만큼 그에 대응하기 위한 다양한 기술 또한 있습니다. 아래는 그 기술들의 예시 중 하나입니다.
 
-`- Server-side Mitigations
+- Server-side Mitigations
 - HTTPOnly flag 사용
 - Content Security Policy 사용
-- X-XSS-Protection`
+- X-XSS-Protection
