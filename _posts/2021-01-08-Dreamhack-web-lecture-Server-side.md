@@ -1,6 +1,6 @@
 ---
 title: "Dreamhack Web hacking Lecture(Server-side)"
-tags: ["basic theory", "server-side basic"]
+tags: ["basic theory", "server-side basic", "sql injection", "os command", ssti, ssrf]
 categories: ["web theory"]
 ---
 
@@ -70,3 +70,33 @@ Command Injection을 예방하기 위한 가장 좋은 방법은 웹 애플리�
 	- **중요** 만약 Double Quotes(")를 사용할 경우 $ 혹은 `가 해석되기에 Single Quotes를 사용해야 함
 
 * * *
+
+## **SSTI**
+
+**Server Side Template Injection**의 약자로 웹 애플리케이션에서 동적인 내용을 HTML로 출력할 때 미리 정의한 Template에 동적인 값을 넣어 출력하기도 하는데, 이 때 Template source에 사용자 입력이 가능할 경우 악의적인 입력을 통해 의도하지 않는 기능을 실행할 수 있는 취약점입니다.
+
+SSTI의 경우 {{}} 혹은 ${}와 같은 문법을 통해 명령을 실행할 수 있습니다.
+
+따라서 이를 예방하기 위해서는 사용자의 입력이 Template source에 삽입되지 않도록 하고 출력을 위해서는 Template context에 값을 넣어 출력하도록 해야 합니다.
+
+* * *
+
+## **Path Traversal**
+
+Path Traversal의 경우 사용자의 입력 데이터가 적절한 필터링 없이 URL 혹은 File path에 직접적으로 사용될 경우 의도하지 않은 임의의 경로에 접근할 수 있는 취약점입니다.
+
+/ 문자의 경우 기존의 URL 구조에서 알 수 있듯이 path identifier 즉, 구분자이며 ..의 경우 자신의 상위 디렉터리를 의미합니다. 또한 ?의 경우 GET 방식에서 Query를 위해 사용하는 문자인데 이 때 ? 문자의 뒤는 모두 query로 해석하기 때문에 응용할 경우 주석과 같은 역할로도 사용할 수 있어보입니다.
+
+이를 예방하기 위해서는 사용자의 입력 데이터에 URL Encoding과 같은 encoding 기법을 통해 일반적인 문자로 인식되도록 하여 예방할 수 있습니다.
+
+* * *
+
+## **SSRF**
+
+**Server Side Request Forgery**의 약자로 웹 애플리케이션에서 변조된 요청/의도하지 않은 서버로 요청을 보내는 취약점을 의미합니다.
+
+SSRF의 경우 웹 애플리케이션에서 사용자가 입력한 URL에 요청을 보내는 기능에서 비롯되기도 하는데 이를 예방하기 위해 사용자가 입력한 URL의 host를 whitelist로 검증할 수 있습니다.
+
+* * *
+
+
