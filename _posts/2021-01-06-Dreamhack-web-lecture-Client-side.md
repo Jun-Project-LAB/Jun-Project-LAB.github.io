@@ -1,7 +1,7 @@
 ---
 title: "Dreamhack Web hacking Lecture(Client-Side)"
-tags: ["client-side basic", sop, cors, xss, csrf, "open redirect", "click jacking"]
-categories: ["dreamhack", "web course"]
+tags: ["basic theory", "client-side basic", sop, cors, xss, csrf, "open redirect", "click jacking"]
+categories: ["web theory"]
 ---
 
 ## Client-Side Basic
