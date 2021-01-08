@@ -1,5 +1,5 @@
 ---
-title: "Dreamhack Web hacking Lecture(Server-side)
+title: "Dreamhack Web hacking Lecture(Server-side)"
 tags: ["basic theory", "server-side basic"]
 categories: ["web theory"]
 ---
