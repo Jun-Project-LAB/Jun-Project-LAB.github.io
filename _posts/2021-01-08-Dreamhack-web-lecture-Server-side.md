@@ -1,6 +1,6 @@
 ---
 title: "Dreamhack Web hacking Lecture(Server-side)"
-tags: ["basic theory", "server-side basic", "sql injection", "os command", ssti, ssrf]
+tags: ["basic theory", server-side, "dreamhack lecture"]
 categories: ["web theory"]
 ---
 

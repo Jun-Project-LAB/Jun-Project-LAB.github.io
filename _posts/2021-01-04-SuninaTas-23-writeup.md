@@ -1,7 +1,7 @@
 ---
 title: "Suninatas 23 Write up"
 categories: SQLi
-tags: [blindSQLi, wargame, suninatas]
+tags: [blindsqli, wargame]
 ---
 
 Suninatas 23 Write-Up
