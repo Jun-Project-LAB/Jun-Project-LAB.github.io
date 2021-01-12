@@ -162,4 +162,66 @@ cmp 또한 sub과 마찬가지로 뺄셈을 진행하지만 그 결과값이 피
 
 >`cmp dst, src`
 
+- jmp(jump) & jcc(jump if condition is met)
+
+jmp와 jcc 모두 피연산자가 가리키는 곳으로 점프하는 동작은 같지만 jmp의 경우 무조건 점프하고 jcc의 경우 조건에 따라 수행 여부가 달라집니다.
+
+jcc가 사용하는 조건은 flags register의 flag와 관련이 있기 때문에 명령을 수행하기 전에 어떤 산술 연산을 하거나 test, cmp와 같은 연산을 수행한 결과를 바탕으로 명령의 동작 여부를 결정합니다.
+
+jcc에 대해 자세히 설명하기 이전에 jmp의 경우 아래와 같이 간단하게 사용할 수 있습니다. location에는 이동할 주소가 입력됩니다.
+
+>`jmp location`
+
+jcc는 앞서 본 명령어들과 다르게 명령어의 이름이 아닌 여러 명령어를 묶어서 부르는 표현입니다. jcc에는 많은 종류의 명령어들이 있는데 아래 링크에서 자세히 확인할 수 있습니다.
+<https://www.felixcloutier.com/x86/jcc>
+
+* * *
+
+### Stack Operations
+
+다음으로는 stack과 관련된 명령어입니다. 프로그래밍을 하는 것에 있어서 지역 변수를 사용하는 것은 거의 필수로 자리잡았는데 이때 지역 변수들은 stack에 저장됩니다. stack은 register가 아닌 memory에 준비되는데 새로운 함수가 시작될 때 스택이 준비되는 것을 Function Prologue, 함수가 종료될 때 스택이 종료되는 것을 Function Epliogue라고 합니다. 이 과정은 스택의 가장 윗부분을 가리키는 rsp register와 밀접한 관련이 있습니다.
+
+stack에 새로운 데이터를 추가할수록 stack은 점점 길어지는데 이름에서 알 수 잇듯이 가장 최근에 들어온 data를 이전 data 위에 쌓아가는 방식으로 길어지게 됩니다. 이때 rsp는 stack의 가장 위쪽을 가리키므로 마지막으로 데이터가 추가된 위치를 저장하는 register입니다.
+
+물론 Assembly의 특성 상 architecture에 따라 stack의 동작이 다르게 나타날 수 있는데 새로운 data가 추가될 때 더 높은 메모리 주소에 저장되는 경우도 있고, 이와 반대로 더 낮은 메모리 주소에 저장되는 경우도 있습니다. Intel x86-64 architecture의 경우 후자의 방식에 해당됩니다.
+
+- push & pop
+
+push와 pop은 stack에 데이터를 추가하거나 뺄 때 사용합니다. 명령어를 사용할 경우 다음과 같이 사용할 수 있습니다.
+
+>`push rdi`
+>`pop rdi`
+
+push와 pop의 과정을 자세하게 분석하면 다음과 같이 볼 수 있습니다.
+
+> push
+```
+sub rsp, 8
+mov [rsp], rdi
+```
+
+> pop
+```
+mov rdi, [rsp]
+add rsp, 8
+```
+
+* * *
+
+## **Procedure Call instructions**
+
+마지막으로 함수를 호출하는 명령어와 종료하는 명령어입니다.
+
+- call
+
+함수를 실행할 때 call 명령어를 사용합니다. call의 경우 피연산자로 실행할 함수의 주소를 받으며 함수 종료 후 돌아올 주소 즉, return address를 stack에 push 후 호출된 함수의 주소로 jmp하는 것과 같은 원리로 동작합니다.
+
+>`call location`
+
+- ret
+
+호출된 함수가 마지막으로 사용하는 명령어로 함수를 종료한 뒤 return address로 복귀합니다. ret은 별도의 피연산자가 필요하지 않습니다.
+
+>`ret`
+
 
