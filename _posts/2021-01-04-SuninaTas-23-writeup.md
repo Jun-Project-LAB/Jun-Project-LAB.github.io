@@ -12,7 +12,7 @@ Suninatas 23 Write-Up
 이번 문제의 경우 이전 22번 문제에서 변형된 문제로 admin이라는 단어가 필터링에 추가됨과 동시에
 substring과 같이 blind SQL Injection에 있어서 중요한 keyword들이 필터링 되었습니다.
 
-![Suninatas_23_Main](https://raw.githubusercontent.com/Jun-Project-LAB/Jun-Project-LAB.github.io/main/_image/suninatas_23_main.png)
+![Suninatas_23_Main](/_image/suninatas_23_main.png)
 
 문제의 풀이 조건의 경우 이전 문제와 동일하였습니다. 이번 문제의 핵심은 admin 문자와 substring과 같은
  keyword를 대체할 방법을 찾는 것이었습니다.
