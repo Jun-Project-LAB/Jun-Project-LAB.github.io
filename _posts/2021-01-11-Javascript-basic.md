@@ -25,9 +25,13 @@ javascript에서 사용되는 대표적인 data type의 경우 7가지를 예로
  : 변수의 값이 비어 있는, 아직 정의되지 않은 상태
 - Null
  : Undefined와 같은 empty value
+   Null의 경우 typeof를 통해 확인하였을 경우 object로 출력됨.
 - Symbol
  : 최근에는 자주 사용되지 않음
 - Bigint
  : 더 넓은 범위의 int type
 ```
+
+* * *
+
 
