@@ -80,3 +80,86 @@ lea의 경우 Load Effective Address로 src의 주소를 dst에 저장합니다.
 산술 연산과 관련된 레지스터로 FLAGS 레지스터의 CF(carryup flag), OF(overflow flag), ZF(zero flag)와 관련이 있습니다.
 
 
+### Unary Instructions
+
+- inc, dec
+
+dst의 값을 1 증가시키거나 감소시키며 c 언어로 생각하였을 때 전치 연산자와 같습니다.
+
+>`inc dst`
+>`dec dst`
+
+- neg
+
+dst에 들어있는 값의 부호를 바꿉니다. (2의 보수)
+
+>`neg dst`
+
+- not
+
+dst에 들어있는 값의 비트를 반전해줍니다.
+
+>`not dst`
+
+* * *
+
+### Binary Instructions
+
+- add, sub
+
+각각 덧셈, 뺄셈 연산을 수행합니다.
+
+>`add dst, src`
+>`sub dst, src`
+
+- imul
+
+dst에 들어있는 값에 src를 곱합니다.
+
+>`imul dst, src`
+
+- and, or, xor
+
+dst에 들어있는 값과 src 간에 해당되는 논리 연산 후 결과를 dst에 저장합니다.
+
+>`and dst, src`
+>`or dst, src`
+>`xor dst, src`
+
+* * *
+
+### Shift Instructions
+
+- shl, shr
+
+dst의 값을 n 만큼 왼쪽이나 오른쪽으로 shift 합니다. 이때의 shift는 logical shift이기 때문에 빈 bit에는 0이 채워집니다.
+
+>`shl dst, n`
+>`shr dst, n`
+
+- sal, sar
+
+shl, shr과 동일하게 shift 기능을 가지고 있으나 부호가 보존됩니다.
+
+>`sar dst, n`
+>`sal dst, n`
+
+* * *
+
+### Conditional Operations
+
+다음 명령어들은 분기문이나 조건문과 같이 코드의 실행 흐름을 제어하는 것과 밀접한 관련이 있습니다. 특히 실행 흐름을 정할 때, flags 레지스터의 각종 플래그와 밀접한 관련을 가지고 동작합니다.
+
+- test
+
+test의 경우 and와 마찬가지로 논리 연산을 하지만 그 결과값을 피연산자에 저장하지 않는다는 특징을 가지고 있습니다. 대신 이 연산 결과가 flags register에 영향을 미치는데 결과가 음수일 경우 SF가 1이 되고, 결과가 0일 경우 ZF를 1로 만듭니다.
+
+>`test dst, src`
+
+- cmp
+
+cmp 또한 sub과 마찬가지로 뺄셈을 진행하지만 그 결과값이 피연산자에 저장하는 것이 아닌 flags register에 영향을 미칩니다. 만약 dst = src일 경우 ZF=1, CF=0이 되고, dst < src일 때에는 ZF=0, CF=1, 반대로 dst > src일 경우 ZF=0, CF=0이 됩니다.
+
+>`cmp dst, src`
+
+
