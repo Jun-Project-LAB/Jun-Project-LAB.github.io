@@ -27,7 +27,7 @@ rax는 primary accumulator로 입/출력 및 대부분의 산술 명령에서 �
 rbx는 base register로 indexed addressing에 사용할 수 있습니다.
 
 *addressing에 관한 내용은 아래 링크 참조*
-https://www.cs.helsinki.fi/u/kerola/tito/koksi_doc/memaddr.html
+<https://www.cs.helsinki.fi/u/kerola/tito/koksi_doc/memaddr.html>
 
 - **rcx**
 
@@ -43,8 +43,6 @@ rdx는 data register로 이 register 또한 입/출력에 사용합니다. 큰 �
 
 다음 레지스터들은 범용 목적이 아닌 특정 동작을 위해 사용되는 레지스터들입니다.
 
-* * *
-
 - **rsp**
 
 rsp는 stack pointer로 stack의 가장 윗 주소를 가리킵니다.
@@ -58,8 +56,6 @@ rip는 instruction pointer로 다음에 실행될 명령어가 위치한 주소�
 ## **Instructions**
 
 Instructions은 Assembly에서 동작을 제어하기 위해 사용하는 명령어입니다.
-
-* * *
 
 ## **Data Movement**
 
@@ -76,5 +72,11 @@ src의 값을 dst로 옮기는 명령어이며 다음과 같이 사용할 수 �
 lea의 경우 Load Effective Address로 src의 주소를 dst에 저장합니다.
 
 >`lea dst, src`
+
+* * *
+
+## **Arthmetic Oprations**
+
+산술 연산과 관련된 레지스터로 FLAGS 레지스터의 CF(carryup flag), OF(overflow flag), ZF(zero flag)와 관련이 있습니다.
 
 
