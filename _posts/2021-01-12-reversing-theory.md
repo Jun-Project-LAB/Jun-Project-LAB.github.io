@@ -176,6 +176,26 @@ jcc는 앞서 본 명령어들과 다르게 명령어의 이름이 아닌 여러
 
 <https://www.felixcloutier.com/x86/jcc>
 
+간단한 프로그램에 대해 reversing을 하면서 jcc의 각 명명 규칙에 대해 알 수 있었습니다. 먼저 j의 경우 공통적으로 jump의 의미를 갖고 있습니다.
+
+그 다음 ja, jae, jb, je와 같은 다양한 instructions을 알 수 있었는데 여기서 각 스펠링들의 의미는 다음과 같았습니다.
+
+```
+- a : above(이상)
+- b : below(이하)
+- e : equal(같음)
+- n : not(부정)
+- g : greater(이상)
+- l : less(이하)
+```
+
+위 예시 외에도 다양한 종류가 있지만 모두 약어를 표시한 것임을 알 수 있었습니다. 여기서 한 가지 의문인 것은 a와 g, b와 l과 같이 동일한 의미를 지니는 instructions이었습니다.
+우선 가장 큰 차이점은 각 상태를 의미하는 flags의 차이입니다. 그럼에도 명확한 차이는 이해할 수 없었는데 아래 링크에서 a의 경우 unsigned 즉 부호가 없는 결과, g의 경우 signed 부호가 있는 결과의 차이라는 것을 알 수 있었습니다.
+
+<https://stackoverflow.com/questions/20906639/difference-between-ja-and-jg-in-assembly>
+
+따라서 b와 l의 차이도 위와 같은 맥락이라는 것을 알 수 있었습니다.
+
 * * *
 
 ### Stack Operations
