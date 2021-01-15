@@ -34,4 +34,18 @@ javascript에서 사용되는 대표적인 data type의 경우 7가지를 예로
 
 * * *
 
+## **변수 선언**
 
+javascript에서 변수를 선언할 때 사용할 수 있는 keyword는 let, var, const가 있습니다. 앞서 data type을 설명할 때 얘기하였듯이 javascript는 dynamic type이기 때문에 data type을 적는 것이 아닌 위 keyword를 사용하게 됩니다.
+
+- let & var
+
+let과 var는 많은 비슷한 특징을 가지고 있습니다. 변수 선언 시 초기값을 지정하지 않아도 사용할 수 있으며 할당되어 있는 값을 변경할 수도 있습니다. let은 var의 기능을 개선하기 위해 추가되었는데 var의 경우 이미 선언된 변수를 재선언하여도 오류가 발생하지 않게 되어 복잡한 프로그램을 설계할 시에 단점이 될 수 있었습니다. 따라서 let은 이미 선언된 변수에 대해 재선언을 불가하도록 개선하였습니다.
+
+다음으로 가장 특징적인 차이는 scope의 차이입니다. var는 function-scope, let과 const의 경우 block-scope입니다. 이는 쉽게 이해하면 global variables, local variables로 이해할 수 있습니다. 
+
+- const
+
+const의 경우 let과 마찬가지로 block-scope에 해당하는 변수 선언 방법이지만 변수를 선언할 때 **반드시 초기값이 있어야 하며**, **재할당, 재선언이 불가**하다는 특징이 있습니다. 즉, 상수의 개념으로 이해할 수 있습니다.
+
+* * *
