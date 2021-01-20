@@ -11,7 +11,7 @@ Webhacking.kr 4 Write-Up
 
 문제에 접속하면 아래 사진과 같이 40자의 문자열과 제출 칸이 있는 것을 확인할 수 있었습니다. 영어, 숫자가 혼합된 40자의 문자열은 hash 함수 중 sha-1의 특징이므로 hash와 관련한 것임을 알 수 있었습니다.
 
-[!Webhacking.kr_4_Main](https://raw.githubusercontent.com/Jun-Project-LAB/Jun-Project-LAB.github.io/main/_image/webhacking_kr_4_main.png)
+![Webhacking.kr_4_Main](https://raw.githubusercontent.com/Jun-Project-LAB/Jun-Project-LAB.github.io/main/_image/webhacking_kr_4_main.png)
 
 * * *
 
