@@ -1,5 +1,5 @@
 ---
-title: "Webhacking challenge(old) 9th Write-Up"
+title: "Webhacking.kr challenge(old) 9th Write-Up"
 tags: [blindsqli, wargame]
 categories: [sqli]
 ---
