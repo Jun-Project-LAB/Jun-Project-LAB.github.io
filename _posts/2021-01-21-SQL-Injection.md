@@ -75,7 +75,7 @@ Blind SQL Injection을 성공적으로 수행하기 위해서는 아래 두 가�
 
 Time Based Blind SQL Injection은 시간 지연을 이용하여 참/거짓을 판단합니다. 주로 DBMS에서 기본으로 제공하는 sleep 같은 함수를 사용하거나, 무거운 연산과정을 발생시켜 쿼리 처리 시간을 지연 시키는 heavy query 등이 존재합니다.
 
--- MySQL
+	- MySQL
 
 > sleep()
 
@@ -94,7 +94,7 @@ MySQL은 기본적으로 information_schema DB에 tables라는 system table을 �
 
 * * *
 
--- MSSQL
+	- MSSQL
 
 > waitfor
 
@@ -114,7 +114,7 @@ WAITFOR 뒤에 TIME 옵션을 사용할 경우 지정된 시간에 query가 실�
 
 MSSQL은 MySQL에서 사용되었던 table과 다르게 columns table을 사용하여 heavy query를 실행할 수 있습니다. DB명은 MySQL과 일치하기에 information_schema.columns와 같이 사용하면 됩니다.
 
--- SQLite
+	- SQLite
 
 > heavy query
 
@@ -188,11 +188,11 @@ MySQL의 경우 version()과 @@version 모두 사용 가능하지만 PostgreSQL�
 
 - **결과가 출력되지 않을 때**
 
--- **True/False를 통해 확인 가능할 경우**
+	- **True/False를 통해 확인 가능할 경우**
 
 Blind 방식을 사용하여 함수, 조건문에 대한 결과값을 확인하여 구분할 수 있습니다.
 
--- **출력이 존재하지 않는 경우**
+	- **출력이 존재하지 않는 경우**
 
 위의 방식도 사용이 불가할 경우 Time Based 방식을 사용하는데 이 때, sleep 함수의 형태에 따라 구별할 수 있습니다. 예를 들어 MySQL은 sleep() 형식으로 사용하지만 PostgreSQL은 pg_sleep()로 사용하기에 실행 여부를 통해 확인할 수 있습니다.
 
@@ -222,33 +222,33 @@ keyword를 필터링할 때 해당 keyword를 다른 단어로 바꿔버리는 r
 
 - **그 외 keyword filter bypass 방법**
 
--- **concat**
+	- **concat**
 
 concat의 경우 문자열을 합칠 수 있는 함수입니다. 사용법의 경우 concat(a, b)와 같이 하면 a와 b 문자열을 이어붙입니다. MySQL, MSSQL, PostgreSQL 등에서 사용할 수 있습니다.
 
 MSSQL의 경우 concat 함수 대신 + 기호를 사용할 수도 있으며 SQLite의 경우 || 기호를 사용하여도 가능합니다.
 
--- **reverse**
+	- **reverse**
 
 reverse 함수는 입력된 문자열의 순서를 거꾸로 재배치합니다. MySQL, MSSQL 등에서 사용할 수 있습니다.
 
--- **진법 변환 표기**
+	- **진법 변환 표기**
 
 진법 표기를 통해 문자열을 입력하는 것 또한 가능합니다. bin의 경우 0b~~, oct의 경우 x'~~', hex의 경우 0x~~와 같이 표기할 수 있습니다.
 
--- **문자 변환 함수**
+	- **문자 변환 함수**
 
 직접 진법 변환을 하는 것이 아닌 함수를 사용하여 변환하는 것 또한 가능합니다. ASCII 값을 문자열로 변환할 때 MySQL, MSSQL, SQLite 등은 char() 함수를 사용하며 PostgreSQL 등은 chr() 함수를 사용합니다. 반대의 경우 MySQL 등은 ord() 함수를, MSSQL은 ASCII() 함수를 사용하여 변환할 수 있습니다.
 
--- **WhiteSpace**
+	- **WhiteSpace**
 
 공백을 우회하는 방법에는 여러 방법이 있지만 대표적으로 개행 문자(\\n)를 이용한 방법과 주석(/\*\*/)을 이용한 방법이 있습니다.
 
--- **MySQL Comment Execute**
+	- **MySQL Comment Execute**
 
 앞서 /\*\*/의 경우 주석을 위해 사용할 수 있는 것을 알 수 있었는데 MySQL의 경우 /\*!command\*/와 같이 사용할 경우 WAF에서는 주석으로 인식하지만 DBMS에서는 command가 정상적으로 동작한다고 합니다.
 
--- **Select bypass**
+	- **Select bypass**
 
 Select가 필터링 된 경우 union values()를 통해 select와 같은 기능을 할 수 있습니다.
 
