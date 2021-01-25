@@ -49,3 +49,35 @@ let과 var는 많은 비슷한 특징을 가지고 있습니다. 변수 선언 �
 const의 경우 let과 마찬가지로 block-scope에 해당하는 변수 선언 방법이지만 변수를 선언할 때 **반드시 초기값이 있어야 하며**, **재할당, 재선언이 불가**하다는 특징이 있습니다. 즉, 상수의 개념으로 이해할 수 있습니다.
 
 * * *
+
+## **Template Literals**
+
+일반적인 프로그래밍에서 문자 혹은 문자열을 표현하는 방법은 single quotes('') 혹은 double quotes("")가 있습니다. Javascript에서는 backtick(\`\`)을 사용하여 더 다양한 문자열을 표현하는 것 또한 가능합니다.
+
+multi-line 출력을 할 때 backtick을 사용할 경우 line feed 문자를 사용할 필요 없이 그저 Enter를 입력하는 것만으로 표현이 가능합니다. 아래 두 가지 경우 모두 동일한 결과를 출력합니다.
+
+```javascript
+console.log("hi\nI'am Human!");
+
+console.log(`hi
+I'am Human!`);
+```
+
+또한 backtick을 사용하여 template literals를 이용할 수 있습니다. 쉽게 이해하자면 Python의 format() 함수와 비슷한 형식으로 사용이 가능합니다.
+
+```javascript
+const age = 20;
+const name = "Yena";
+
+const helloText = `Hi my name is ${name} and i'am ${age} years old~`
+
+console.log(helloText);
+
+/*
+Hi my name is Yena and i'am 20 years old~
+*/
+```
+
+* * *
+
+
