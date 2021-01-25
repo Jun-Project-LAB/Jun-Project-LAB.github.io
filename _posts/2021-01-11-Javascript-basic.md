@@ -80,4 +80,14 @@ Hi my name is Yena and i'am 20 years old~
 
 * * *
 
+## **Type Conversion & Coercion**
+
+Javascript는 기본적으로 자동적으로 형변환을 지원합니다. 그러나 때에 따라서 자동적으로 변환되는 결과가 아닌 수동적으로 변경할 필요가 있을 수도 있는데 이때, Number() 함수와 String() 함수를 사용할 수 있습니다.
+
+Number 함수의 경우 String을 Number 형으로 변환 시켜주며 String 함수의 경우 반대로 Number 형을 String 형으로 변환시켜줍니다. 이때 기존 변수에 할당되어 있는 값에는 영향을 끼치지 않습니다.
+
+또한 Javascript는 + 문자를 사용하여 문자열을 이어붙여 출력할 수 있는데 이때 만약 String과 Number가 같이 있을 경우에는 무조건 Number를 String으로 변경하여 실행합니다. 그 외에 -, \*, /, <, > 와 같은 산술, 비교 연산자 등은 String을 Number로 변환하여 실행합니다.
+
+* * *
+
 
