@@ -90,4 +90,12 @@ Number 함수의 경우 String을 Number 형으로 변환 시켜주며 String �
 
 * * *
 
+## **Strict Mode**
+
+Strict Mode의 경우 JavaScript 맨 상단에 `'use strict';`로 지정하여 사용할 수 있습니다. Javascript의 경우 명확한 오류가 아닌 애매한 오류가 발생하였을 때 이를 묵시적으로 넘어가고 실행하는 경우가 있는데 Strict mode를 사용할 경우 조금의 오류만 있어도 javascript 실행이 되지 않습니다.
+
+이러한 strict mode는 개발자 입장에서 미연에 오류를 찾아내고 수정할 수 있기 때문에 유용합니다.
+
+* * *
+
 
