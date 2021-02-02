@@ -98,4 +98,22 @@ Strict Mode의 경우 JavaScript 맨 상단에 `'use strict';`로 지정하여 �
 
 * * *
 
+## **Arrow Function**
+
+Arrow Function의 경우 기존 function(){ }과 다르게 => 를 이용한 함수 표현 방식입니다. 이러한 방식의 가장 큰 장점으로는 간단한 함수를 표현할 때 확인할 수 있습니다. 예를 들어 숫자 하나를 입력 받아 그 숫자의 2를 곱한 값을 출력할 때 기존 function 방식을 사용하면 다음과 같이 표현할 수 있습니다.
+
+```javascript
+function [functionname](a){
+    return a * 2;
+}
+```
+
+그러나 arrow function을 사용할 경우 아래와 같이 한 줄로 표현할 수 있습니다.
+
+```javascript
+[variable name ] = [name] => {a * 2};
+```
+
+Arrow Function을 사용할 경우 위와 같은 예시의 경우 별도로 return을 지정하지 않아도 자동적으로 return을 사용한 것과 동일한 효과를 얻을 수 있습니다.
+
 
