@@ -111,9 +111,9 @@ function [functionname](a){
 그러나 arrow function을 사용할 경우 아래와 같이 한 줄로 표현할 수 있습니다.
 
 ```javascript
-[variable name ] = [name] => {a * 2};
+[function name] = [variables] => {a * 2};
 ```
 
+function name의 경우 기존의 function과 동일하게 함수의 이름을 지정할 수 있고, variables 부분에서 인자로 넘길 값들을 지정할 수 있습니다. 복수개의 인자를 넘길 경우 괄호를 사용하여 묶을 수 있습니다.
+
 Arrow Function을 사용할 경우 위와 같은 예시의 경우 별도로 return을 지정하지 않아도 자동적으로 return을 사용한 것과 동일한 효과를 얻을 수 있습니다.
-
-
