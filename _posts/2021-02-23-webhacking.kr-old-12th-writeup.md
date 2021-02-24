@@ -1,6 +1,6 @@
 ---
 title: "Webhacking.kr challenge(old) 12th Write-Up"
-tags: [wargame, javascript
+tags: [wargame, javascript]
 categories: [javascript]
 ---
 
