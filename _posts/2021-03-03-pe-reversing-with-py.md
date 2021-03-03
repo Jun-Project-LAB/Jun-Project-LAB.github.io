@@ -17,15 +17,15 @@ Reversing에 사용하는 프로그램은 IDA를 기준으로 작성하였습니
 
 우선 IDA를 통하여 찾고자 하는 data의 시작점을 확인할 필요가 있습니다. 아래 사진을 참조하면 data section의 00007FF6270A3020부터 시작하며 첫 값은 c가 할당되어 있는 것을 확인할 수 있습니다.
 
-![IDA_View_1]()
+![IDA_View_1](https://github.com/Jun-Project-LAB/Jun-Project-LAB.github.io/blob/main/_image/IDA_View_1.png?raw=true)
 
 시작 값에 커서를 올려둔 뒤 창의 하단을 확인해보면 아래와 같이 Status를 확인할 수 있는데 이때, 맨 앞의 값이 File Offset에 해당됩니다. 
 
-![IDA_View_bot]()
+![IDA_View_bot](https://github.com/Jun-Project-LAB/Jun-Project-LAB.github.io/blob/main/_image/IDA_View_bot.png?raw=true)
 
 이를 HxD를 통해서 해당 File Offset에 찾아가보면 일치하는 것을 확인할 수 있습니다.
 
-![HxD]()
+![HxD](https://github.com/Jun-Project-LAB/Jun-Project-LAB.github.io/blob/main/_image/HxD.png?raw=true)
 
 * * *
 
