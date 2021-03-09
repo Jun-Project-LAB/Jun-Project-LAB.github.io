@@ -17,7 +17,7 @@ Pwnable을 위해 필요한 linux system 명령어나 file system 동작 등 기
 
 > 예시 코드
 
-```unix
+```
 cat note.txt | sort | uniq -c
 ```
 
