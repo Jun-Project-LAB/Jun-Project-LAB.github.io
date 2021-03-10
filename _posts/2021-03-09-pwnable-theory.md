@@ -38,7 +38,7 @@ diff old_password new_password
 42c42
 < w0Yfolrc5bwjS4qw5mq1nnQi6mF03bii
 ---
-&gt; &#62; kfBf3eYk5BPBRzwjqutbbfE887SVc5Yd
+>> kfBf3eYk5BPBRzwjqutbbfE887SVc5Yd
 ```
 
 위 출력 결과에서 < 로 시작한 부분이 file_1의 내용, > 이후로 있는 내용이 변경된 file_2의 내용이 됩니다. diff 명령어 외에도 다양한 비교 명령어에 관해서는 아래 링크를 참조하면 좋을 것 같습니다.
