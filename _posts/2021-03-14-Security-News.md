@@ -6,9 +6,9 @@ categories: ["Security News"]
 
 # Index
 
-1. [Subject](#Subject)
-2. [Related News](#Related News)
-3. [Opinion](#Opinion)
+1. [Subject](#subject)
+2. [Related News](#related-news)
+3. [Opinion](#opinion)
 
 * * *
 
