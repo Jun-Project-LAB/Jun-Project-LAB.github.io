@@ -7,6 +7,9 @@ categories: [system, "pwnable theory"]
 Linux System backgound theory for Pwnable
 ------------------------------------------
 
+1. [Command](#command)
+2. [Program](#program)
+
 Pwnable을 위해 필요한 linux system 명령어나 file system 동작 등 기본적인 부분에 대해 정리하였습니다.
 
 ## **Command**
@@ -47,4 +50,36 @@ diff old_password new_password
 
 * * *
 
+### git
 
+git command를 주로 push용으로만 script를 작성해서 거의 쓸 일이 없다보니 새로 안 내용이 많았기에 간략하게 정리해보았습니다.
+
+> commit log 확인
+```
+git log -> 일반적인 commit history 확인
+git log -p -> commit history의 diff를 출력
+git log -2 -> 최근 두 개의 결과 출력
+```
+
+> branch 확인
+```
+git branch -a
+```
+
+> branch 변경
+```
+git checkout <branch명>
+```
+
+## **Program**
+
+### Vim
+
+주로 파일 수정할 때만 사용하였는데 생각보다 다양한 기능이 있었습니다. 모든 command는 Shift + : 을 누른 상태를 가정하고 작성하였습니다.
+
+- Bash shell 실행
+
+```
+set shell=/bin/bash
+shell
+```
