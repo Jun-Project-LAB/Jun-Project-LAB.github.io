@@ -10,6 +10,8 @@ Index
 1. [Buffer Overflow](#buffer-overflow)
 2. [Out Of Boundary](#out-of-boundary)
 3. [Off By One](#off-by-one)
+4. [Format String Bug](#format-string-bug)
+5. [Double Free & Use-After-Free](#double-free-&-use-after-free)
 
 
 
@@ -58,3 +60,29 @@ Index를 통해 접근할 때 제대로 된 경계 검사를 하지 않을 경�
 Off by One이란 경계 검사에서 "하나"의 오차가 있을 때 발생하는 취약점입니다.
 여기서 하나의 오차란 buffer의 경계 계산 혹은 반복문의 횟수 계산 시 < 대신 <=을 사용하거나 0부터 시작하는 index를 고려하지 못해서 발생하는 오차를 뜻합니다.
 ```
+
+
+
+## Format String Bug
+
+> What is Format String Bug?
+```
+Format String Bug(이하 FSB)는 printf나 sprintf와 같이 FS를 사용하는 함수에서 프로그래머가 지정한 문자열이 아닌 사용자의 입력이 FS로 전달될 때 발생하는 취약점입니다.
+```
+
+이에 대해 쉽게 예를 들면 사용자의 문자열을 입력받는 곳에서 %x, %d와 같은 FS를 입력할 경우 이후의 인자가 전달되지 않기 때문에 쓰레기 값을 출력하게 된다고 합니다.
+
+최신 컴파일러에서는 이러한 취약점을 막기 위하여 노력하고 있으나 그럼에도 발견될 경우 프로그램에 큰 영향을 줄 수 있는 취약점입니다.
+
+- 표준 C Libray에서 FS를 사용하는 대표적인 함수들
+	- printf
+	- sprintf/snprintf
+	- fprintf
+	- vprintf/vfprintf
+	- vsprintf/vsnprintf
+
+
+
+## Double Free & Use-After-Free
+
+
