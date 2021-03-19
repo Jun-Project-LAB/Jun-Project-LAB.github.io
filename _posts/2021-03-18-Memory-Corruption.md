@@ -77,7 +77,7 @@ Format String Bug(이하 FSB)는 printf나 sprintf와 같이 FS를 사용하는 
 	- vprintf/vfprintf
 	- vsprintf/vsnprintf
 
-## Double Free & Use-After-Free
+## Double Free & Use After Free
 
 > What is Double Free
 ```
