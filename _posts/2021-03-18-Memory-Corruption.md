@@ -11,7 +11,7 @@ Index
 2. [Out Of Boundary](#out-of-boundary)
 3. [Off By One](#off-by-one)
 4. [Format String Bug](#format-string-bug)
-5. [Double Free & Use-After-Free](#double-free-&-use-after-free)
+5. [Double Free & Use-After-Free](#double-free--use-after-free)
 6. [Uninitialized Memory](#uninitialized-memory)
 7. [Integer Issue](#integer-issue)
 
