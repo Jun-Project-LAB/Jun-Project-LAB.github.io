@@ -1,5 +1,5 @@
 ---
-title: "B반\_최준영\_3월 3주차"
+title: "B반_최준영_3월 3주차"
 tags: [tesla, "satellite internet"]
 categories: ["Security News"]
 ---
