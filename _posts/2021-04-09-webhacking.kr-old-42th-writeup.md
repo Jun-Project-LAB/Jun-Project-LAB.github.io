@@ -11,6 +11,6 @@ Webhacking.kr 42 Write-Up
 
 문제에 접속하면 no, subject, file의 목차를 가지고 있는 표를 확인할 수 있었습니다.
 
-[Webhacking.kr 42th Main](https://github.com/Jun-Project-LAB/Jun-Project-LAB.github.io/blob/main/_image/webhacking_kr_42_main.png?raw=true)
+![Webhacking.kr 42th Main](https://github.com/Jun-Project-LAB/Jun-Project-LAB.github.io/blob/main/_image/webhacking_kr_42_main.png?raw=true)
 
 
