@@ -44,7 +44,7 @@ Find the Name when the Serial is 5B134977135E7D13
 .text:004010F0                 jnz     short loc_40110E
 ```
 
-먼저 Stack의 `esp+13Ch+var\_C8` 위치에는 입력받은 Name을 어떠한 형태로 재가공한 값이 저장되어 있었습니다. 그 밑에 줄에서 확인할 수 있는 `esp+13Ch+var\_12C`에는 입력받은 Serial 값이 그대로 저장되어 있었습니다.
+먼저 Stack의 `esp+13Ch+var_C8` 위치에는 입력받은 Name을 어떠한 형태로 재가공한 값이 저장되어 있었습니다. 그 밑에 줄에서 확인할 수 있는 `esp+13Ch+var_12C`에는 입력받은 Serial 값이 그대로 저장되어 있었습니다.
 
 해당 값을 각각 esi, eax register에 저장 후 이 두 문자열을 비교하는 부분이 `cmp dl, [esi]` 내용이었습니다. 즉, 가공된 Name의 값과 Serial의 값이 일치해야 한다는 것인데 'a' 라는 문자를 자릿수를 늘려가며 넣어본 결과 아래와 같이 변경됨을 알 수 있었습니다.
 
