@@ -1,6 +1,6 @@
 ---
 title: "Reverse Engineering Basic Theory"
-tags: [assembly]
+tags: ["reversing theory"]
 categories: [Reversing]
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Linux Boot Process"
-tags: [linux, "basic theory"]
+tags: [linux, "system theory"]
 categories: [System]
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Dreamhack Web hacking Lecture(Server-side)"
-tags: ["basic theory", server-side, "dreamhack lecture"]
+tags: ["web theory"]
 categories: ["Web"]
 ---
 

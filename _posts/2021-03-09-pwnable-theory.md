@@ -1,6 +1,6 @@
 ---
 title: "Pwnable Theory"
-tags: [pwnable, linux, "basic theory"]
+tags: ["pwnable theory"]
 categories: [System]
 ---
 

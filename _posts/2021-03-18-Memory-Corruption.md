@@ -1,6 +1,6 @@
 ---
 title: "Memory Corruption"
-tags: [memory, pwnable, "basic theory", "dreamhack lecture"]
+tags: [memory, "system theory"]
 categories: [System]
 ---
 

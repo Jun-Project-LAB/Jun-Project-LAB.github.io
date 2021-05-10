@@ -1,6 +1,6 @@
 ---
 title: "Dreamhack Web hacking Lecture(Client-Side)"
-tags: ["basic theory", client-side, "dreamhack lecture"]
+tags: ["web theory"]
 categories: ["Web"]
 ---
 
