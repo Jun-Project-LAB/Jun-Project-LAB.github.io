@@ -1,7 +1,7 @@
 ---
 title: "Webhacking.kr challenge(old) 4th Write-Up"
 tags: [wargame, hash]
-categories: [crypto]
+categories: [Crypto]
 ---
 
 Webhacking.kr 4 Write-Up
