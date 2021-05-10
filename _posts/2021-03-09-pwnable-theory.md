@@ -1,7 +1,7 @@
 ---
 title: "Pwnable Theory"
 tags: [pwnable, linux, "basic theory"]
-categories: [system, "pwnable theory"]
+categories: [System]
 ---
 
 Linux System backgound theory for Pwnable

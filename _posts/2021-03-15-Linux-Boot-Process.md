@@ -1,7 +1,7 @@
 ---
 title: "Linux Boot Process"
 tags: [linux, "basic theory"]
-categories: [system]
+categories: [System]
 ---
 
 # Index

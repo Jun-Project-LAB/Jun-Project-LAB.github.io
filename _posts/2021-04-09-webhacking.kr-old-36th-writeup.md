@@ -1,7 +1,7 @@
 ---
 title: "Webhacking.kr challenge(old) 36th Write-Up"
 tags: [wargame, system]
-categories: [system]
+categories: [System]
 ---
 
 Webhacking.kr 36 Write-Up
