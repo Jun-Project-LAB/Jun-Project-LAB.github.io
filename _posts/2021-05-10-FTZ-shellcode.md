@@ -1,7 +1,7 @@
 ---
 title: "Custom Shellcode(with. setreuid)"
 tags: [shellcode]
-categories: ["pwnable theory"]
+categories: [System]
 ---
 
 표준 25byte shellcode에 기능 추가하기
