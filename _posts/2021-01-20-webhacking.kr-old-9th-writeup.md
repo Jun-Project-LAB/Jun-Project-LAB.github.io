@@ -1,6 +1,6 @@
 ---
 title: "Webhacking.kr challenge(old) 9th Write-Up"
-tags: [blindsqli, wargame]
+tags: [database, wargame]
 categories: [Web]
 ---
 
