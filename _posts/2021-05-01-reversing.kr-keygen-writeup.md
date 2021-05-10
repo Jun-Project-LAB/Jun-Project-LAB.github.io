@@ -1,7 +1,7 @@
 ---
 title: "Reversing.kr Easy Keygen Write-Up"
 tags: [reversing, wargame]
-categories: [reversing]
+categories: [Reversing]
 ---
 
 # Index
