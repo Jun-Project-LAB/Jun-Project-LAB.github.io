@@ -1,7 +1,7 @@
 ---
 title: "Webhacking.kr challenge(old) 58th Write-Up"
 tags: [javascript, wargame]
-categories: [javascript]
+categories: [Web]
 ---
 
 Webhacking.kr 58 Write-Up

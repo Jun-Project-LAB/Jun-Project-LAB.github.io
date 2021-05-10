@@ -1,7 +1,7 @@
 ---
 title: "JavaScript Basic theory"
 tags: [javascript, "basic theory"]
-categories: ["programing theory", javascript]
+categories: [Programing]
 ---
 
 ## **Javascript**

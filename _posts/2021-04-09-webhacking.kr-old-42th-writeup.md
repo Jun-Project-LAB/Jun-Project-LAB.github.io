@@ -1,7 +1,7 @@
 ---
 title: "Webhacking.kr challenge(old) 42th Write-Up"
 tags: [wargame, javascript]
-categories: [javascript]
+categories: [Web]
 ---
 
 Webhacking.kr 42 Write-Up
