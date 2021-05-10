@@ -1,6 +1,5 @@
 ---
 title: "B반_최준영_5월 1주차"
-tags: ["apple"]
 categories: ["Security News"]
 ---
 

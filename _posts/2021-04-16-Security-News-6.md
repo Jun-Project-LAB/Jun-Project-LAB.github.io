@@ -1,6 +1,5 @@
 ---
 title: "B반_최준영_4월 3주차"
-tags: ["solarwinds"]
 categories: ["Security News"]
 ---
 

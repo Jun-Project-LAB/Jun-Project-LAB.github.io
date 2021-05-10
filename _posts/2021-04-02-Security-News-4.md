@@ -1,6 +1,5 @@
 ---
 title: "B반_최준영_4월 1주차"
-tags: ["supply chain"]
 categories: ["Security News"]
 ---
 

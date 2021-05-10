@@ -1,6 +1,5 @@
 ---
 title: "B반_최준영_3월 4주차"
-tags: [korail]
 categories: ["Security News"]
 ---
 

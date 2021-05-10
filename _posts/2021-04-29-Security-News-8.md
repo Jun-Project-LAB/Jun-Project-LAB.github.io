@@ -1,6 +1,5 @@
 ---
 title: "B반_최준영_4월 5주차"
-tags: ["social infrastructure"]
 categories: ["Security News"]
 ---
 

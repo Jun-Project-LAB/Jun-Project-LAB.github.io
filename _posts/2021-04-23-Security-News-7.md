@@ -1,6 +1,5 @@
 ---
 title: "B반_최준영_4월 4주차" 
-tags: ["phishing mail"]
 categories: ["Security News"]
 ---
 

@@ -1,6 +1,5 @@
 ---
 title: "B반_최준영_4월 2주차"
-tags: ["car hacking"]
 categories: ["Security News"]
 ---
 
