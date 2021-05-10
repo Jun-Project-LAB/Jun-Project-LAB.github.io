@@ -1,6 +1,6 @@
 ---
 title: "Windows Boot Process"
-tags: [windows, "basic theory"]
+tags: [windows, "system theory"]
 categories: [System]
 ---
 
