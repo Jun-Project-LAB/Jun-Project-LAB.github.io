@@ -1,7 +1,7 @@
 ---
 title: "Reversing PE file by Python"
 tags: [reversing, python, PE]
-categories: [reversing, PE]
+categories: [Reversing]
 ---
 
 Reversing with Python
