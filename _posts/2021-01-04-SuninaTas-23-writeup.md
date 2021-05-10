@@ -1,6 +1,6 @@
 ---
 title: "Suninatas 23 Write up"
-categories: SQLi
+categories: Web
 tags: [blindsqli, wargame]
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "Webhacking.kr challenge(old) 21th Write-Up"
 tags: [wargame, blindsqli]
-categories: [SQLi]
+categories: [Web]
 ---
 
 Webhacking.kr 21 Write-Up

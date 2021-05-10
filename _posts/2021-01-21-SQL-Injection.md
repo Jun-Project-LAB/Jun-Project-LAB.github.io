@@ -1,7 +1,7 @@
 ---
 title: "About SQL Injection"
 tags: ["basic theory", database, "dreamhack lecture"]
-categories: [SQLi]
+categories: [Web]
 ---
 
 About SQL Injection
