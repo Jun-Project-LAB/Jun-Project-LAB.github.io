@@ -1,6 +1,6 @@
 ---
 title: "Reversing PE file by Python"
-tags: [reversing, python, PE]
+tags: [PE]
 categories: [Reversing]
 ---
 
