@@ -9,7 +9,7 @@ Webhacking.kr 36 Write-Up
 
 ## **문제 분석**
 
-가장 처음 문제에 접속하면 무언가 설명문을 확인할 수 있습니다. 내용은 다음과 같습니다.
+가장 처음 문제에 접속하면 무언가 설명문을 확인할 수 있습니다. 내용은 다음과 걑습니다.
 
 > ```
 While editing index.php file using vi editor in the current directory, a power outage caused the source code to disappear.
