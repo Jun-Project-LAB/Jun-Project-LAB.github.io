@@ -7,6 +7,13 @@ categories: System
 메모리 보호기법
 ---------------
 
+# Index
+
+1. [RELRO](#relro)
+2. [Canary Word](#canary-word)
+3. [NX bit](#nx-bit)
+4. [PIE](#pie)
+
 Pwnable 문제를 진행하다보면 다양한 메모리 보호기법이 적용되어 있는 것을 알 수 있습니다. 메모리 보호기법에 따라 접근 방식을 변경해야 할 필요가 있기에 이에 대한 자료를 찾아 정리하는 기회를 가졌습니다.
 
 RELRO, Canary, NX, PIE에 대해서 알아보았으며 각각의 의미와 해당 설정 여부를 알 수 있는 방법들에 대해 찾아보았습니다.
