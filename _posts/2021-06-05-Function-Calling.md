@@ -4,8 +4,8 @@ tags: [function, "pwnable theory"]
 categories: [System]
 ---
 
-Frame Pointer Overflow(with. Off by one)
-----------------------------------------
+Function Call
+-------------
 
 # Index
 
