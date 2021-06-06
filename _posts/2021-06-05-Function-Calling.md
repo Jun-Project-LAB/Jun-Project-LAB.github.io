@@ -9,6 +9,11 @@ Frame Pointer Overflow(with. Off by one)
 
 # Index
 
+1. [함수 호출 과정](#함수-호출-과정)
+	- [Prologue](#prologue)
+	- [Epilogue](#epilogue)
+2. [Reference](#reference)
+
 > 본 게시글은 x64 Architecture를 기준으로 작성하였습니다.
 
 ## 함수 호출 과정
@@ -40,7 +45,7 @@ push	rbp
 mov	rbp,rsp
 ```
 
-먼저 `push rbp`를 통해서 caller의 rbp를 stack에 저장합니다. 이후 현재 rsp를 rbp 레지스터로 복사하여 callee의 rbp를 새로 설정합니다. 이때 stack에 저장한 rbp가 SFP가 됩니다. prologue가 종료된 stack의 구조는 다음과 같습니다.
+먼저 `push rbp`를 통해서 caller의 rbp를 stack에 저장합니다. 이후 현재 rsp를 rbp 레지스터로 복사하여 callee의 rbp를 새로 설정합니다. 이때 stack에 저장한 rbp가 SFP이며 SFP 값은 RET의 시작 위치를 저장하고 있습니다. 일반적으로 정상적인 프로그래의 경우prologue가 종료된 stack의 구조는 다음과 같습니다.
 
 |주소|값|설명|
 |:--:|:-:|---|
@@ -68,7 +73,13 @@ mov	rsp,rbp
 pop	rbp
 ```
 
-leave 명령의 경우 callee의 rbp 값을 rsp에 복사 후 `pop rbp`를 통해 SFP 값을 rbp 값으로 이동합니다. 
+leave 명령의 경우 callee의 rbp 값을 rsp에 복사 후 `pop rbp`를 통해 SFP 값을 rbp로 이동합니다. leave 명령을 수행한 뒤에 rsp의 값은 `rbp-0x8`을 가리키고 있으며 stack의 상태는 다음과 같습니다.
+
+|주소|값|설명|
+|:--:|:-:|---|
+|rbp|RET|caller의 다음 rip|
+|rsp|||
+|낮은 주소||
 
 > **ret**
 
@@ -77,7 +88,7 @@ pop	rip
 jmp	rip
 ```
 
-
+마지막으로 ret 명령을 실행하여 callee를 종료 후 caller로 복귀합니다. `pop rip`를 실행할 경우 RET 값을 rip로 이동 후 `jmp rip` 명령을 통해 caller로 복귀합니다.
 
 * * *
 
