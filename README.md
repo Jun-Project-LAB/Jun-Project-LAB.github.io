@@ -42,5 +42,15 @@
 ### 2021.07.03
 
 - x86 환경에서의 ROP 공격 기법
-	- 학습 내용 블로그 작성 (**Complete**)
+	- 학습 내용 게시글 작성 (**Complete**)
 	- 예제 문제 Write-Up 작성 (**In progress**)
+
+### 2021.07.04
+
+- x86 환경에서의 ROP 공격 기법
+    - 예제 문제 Write-Up 작 (**Complete**)
+- RTL 공격 기법 게시글 작성 (**Complete**)
+
+### 2021.07.05
+
+- RTL Chaining 게시글 작성 (**In progress**)
