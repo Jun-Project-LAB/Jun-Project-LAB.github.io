@@ -6,7 +6,10 @@ categories: ["System"]
 
 # Index
 
-1. [](#)
+1. [Overview](#overview)
+2. [Key Points](#key-points)
+3. [Function Calling Convention](#function-calling-convention)
+4. [Gadget](#gadget)
 
 * * *
 
@@ -24,7 +27,8 @@ Exploit payload에 있어서 중요한 차이는 RTL에서는 dummy로 사용되
 
 이를 그림으로 정리하면 다음과 같이 형태가 바뀌었음을 확인할 수 있습니다.
 
-[그림]
+|Spoofed ret|ret after func|first argument|
+|:---------:|:------------:|:------------:|
 
 ## Function Calling Convention
 
