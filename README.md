@@ -54,3 +54,18 @@
 ### 2021.07.05
 
 - RTL Chaining 게시글 작성 (**In progress**)
+
+### 2021.07.06
+
+- RTL Chaining 게시글 작성 (**Complete**)
+- x64 환경에서의 ROP 공격 기법 (**In progress**)
+    - 예제 파일을 이용한 공격 실습 (**In progress**)
+    - ROP 공격을 위해 사용할 수 있는 Return to csu 학습 (**In progress**)
+
+### 2021.07.07
+
+- x64 환경에서의 ROP 공격 기법 (**In progress**)
+    - 예제 파일을 이용한 공격 실습 (**Complete**)
+    - Return to csu 학습 (**Complete**)
+    - Return to csu 게시글 작성 (**In progress**)
+
