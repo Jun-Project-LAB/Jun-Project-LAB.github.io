@@ -73,3 +73,9 @@
 
 - x64 환경에서의 ROP 공격 기법 (**In progress**)
     - Return to csu 게시글 작성 (**In progress**)
+
+### 2021.07.09
+
+- x64 환경에서의 ROP 공격 기법 (**Complete**)
+    - Return to csu 게시글 작성 (**Complete**)
+    - Fake frame(sfp) 학습 (**In progress**)
