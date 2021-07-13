@@ -85,3 +85,8 @@
 - Oneshot gadget 공격 기법 학습 (**Complete**)
 	- 예제 파일을 이용한 공격 실습 (**Complete**)
 	- 예제 문제 Write-Up 작성 (**Complete**)
+
+### 2021.07.13
+
+- ELF format 학습 (**In progress**)
+- rtld_global overwrite 학습 (**Complete**)
