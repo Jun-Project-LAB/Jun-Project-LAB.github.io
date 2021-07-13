@@ -48,7 +48,7 @@
 ### 2021.07.04
 
 - x86 환경에서의 ROP 공격 기법
-    - 예제 문제 Write-Up 작 (**Complete**)
+    - 예제 문제 Write-Up 작성 (**Complete**)
 - RTL 공격 기법 게시글 작성 (**Complete**)
 
 ### 2021.07.05
@@ -79,3 +79,9 @@
 - x64 환경에서의 ROP 공격 기법 (**Complete**)
     - Return to csu 게시글 작성 (**Complete**)
     - Fake frame(sfp) 학습 (**In progress**)
+
+### 2021.07.12
+
+- Oneshot gadget 공격 기법 학습 (**Complete**)
+	- 예제 파일을 이용한 공격 실습 (**Complete**)
+	- 예제 문제 Write-Up 작성 (**Complete**)
