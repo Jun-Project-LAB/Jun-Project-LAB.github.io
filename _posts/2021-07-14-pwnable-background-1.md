@@ -7,7 +7,7 @@ categories: ["System"]
 # Index
 
 1. [Purpose](#purpose)
-2. [Episode 1](#episode 1)
+2. [Episode 1](#episode-1)
 3. [Reference](#reference)
 
 * * *
