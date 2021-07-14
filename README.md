@@ -90,3 +90,8 @@
 
 - ELF format 학습 (**In progress**)
 - rtld_global overwrite 학습 (**Complete**)
+
+### 2021.07.14
+
+- _hook overwrite 학습 (**Complete**)
+- pointer 학습 및 게시글 작성 (**Complete**)
