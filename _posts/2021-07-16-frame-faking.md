@@ -28,7 +28,7 @@ Epilogue 과정 동안 ebp와 esp 값의 변화가 생기는데 이때 ebp 값�
 
 |Address|Value|Register|
 |:-----:|-----|--------|
-|ffffa00c|0xdeadbeef1|-|
+|ffffa00c|0xdeadbeef|-|
 |ffffa010|[system function address]|\<-esp|
 |ffffa014|[exit function address]|-|
 |ffffa018|["/bin/sh" address]|-|
