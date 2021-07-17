@@ -6,7 +6,9 @@ categories: ["System"]
 
 # Index
 
-1. [](#)
+1. [What is Frame faking?](#what-is-frame-faking)
+2. [Sequence of Attack](#sequence-of-attack)
+3. [Reference](#reference)
 
 * * *
 
@@ -41,7 +43,7 @@ Epilogue 과정 동안 ebp와 esp 값의 변화가 생기는데 이때 ebp 값�
 
 |Address|Value|Register|
 |:-----:|-----|--------|
-|ffffa00c|0xdeadbeef1|\<-ebp|
+|ffffa00c|0xdeadbeef|\<-ebp|
 |ffffa010|[system function address]|-|
 |ffffa014|[exit function address]|-|
 |ffffa018|["/bin/sh" address]|-|
@@ -50,4 +52,30 @@ Epilogue 과정 동안 ebp와 esp 값의 변화가 생기는데 이때 ebp 값�
 
 앞서 설명하였듯이 `leave`의 경우 내부적으로 esp에 ebp 주소를 복사 후 esp가 가리키고 있는 주소의 값을 pop을 수행하여 ebp에 할당하게 됩니다.
 
+`leave` 명령을 수행한 뒤의 stack과 register의 상태는 아래와 같이 변경됩니다.
 
+|Address|Value|Register|
+|:-----:|-----|--------|
+|ffffa00c|0xdeadbeef|-|
+|ffffa010|[system function address]|\<-esp|
+|ffffa014|[exit function address]|-|
+|ffffa018|["/bin/sh" address]|-|
+|ffffa01c|0xffffa00c|\<-sfp|
+|ffffa020|[leave address]|\<-ret|
+
+`leave`를 수행 후 `ret`을 다시 수행한다는 뜻이 이해하는데 약간 시간이 걸렸는데, `leave` 명령 이후에 `ret` 명령이 따라오기 때문에 ret을 실행하게 되는 것이었습니다.
+
+간단하게 예시를 보자면 다음과 같습니다.
+
+```
+   0x08048571 <+86>:  leave
+   0x08048572 <+87>:  ret
+```
+
+ret 위치를 leave 명령으로 변조한다는 것은 `0x08048571` 위치로 변조하는 것과 같습니다. 따라서 다음 실행하게 될 명령이 `0x08048572`가 됩니다.
+
+ret 명령을 수행하기 이전에 esp가 system function address를 가리키고 있었기에 Return to Libc와 같은 효과를 나타냅니다.
+
+## Reference
+
+- <https://www.lazenca.net/pages/viewpage.action?pageId=12189944>
