@@ -7,6 +7,8 @@ categories: ["System"]
 # Index
 
 1. [문제 분석](#문제-분석)
+2. [GDB 분석](#gdb-분석)
+3. [Exploit](#exploit)
 
 * * *
 
